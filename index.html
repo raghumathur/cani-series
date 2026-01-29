@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can I Grill Today? | The Definitive Grilling Weather Authority</title>
+    <meta name="description" content="The world's most scientifically rigorous grilling weather advisory system. Enter your ZIP code and discover if the atmospheric conditions align with your carnivorous ambitions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="background-effects">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="smoke-particles" id="smokeContainer"></div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-text">CanIGrillToday</span>
+                <span class="logo-suffix">.com</span>
+            </div>
+            <div class="tagline">The Definitive Grilling Weather Authority™</div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section" id="heroSection">
+                <h1 class="hero-title">
+                    <span class="title-line">Should You</span>
+                    <span class="title-line highlight">Fire Up The Grill</span>
+                    <span class="title-line">Today?</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We've consulted meteorologists, thermodynamics experts, and that one uncle who grills in snowstorms.
+                    Enter your ZIP code for a scientifically-backed verdict.
+                </p>
+
+                <!-- ZIP Input -->
+                <div class="zip-input-container">
+                    <div class="input-wrapper">
+                        <label for="zipInput" class="input-label">Your ZIP Code</label>
+                        <input
+                            type="text"
+                            id="zipInput"
+                            class="zip-input"
+                            placeholder="e.g., 90210"
+                            maxlength="5"
+                            pattern="[0-9]{5}"
+                            autocomplete="postal-code"
+                        >
+                        <div class="input-decoration"></div>
+                    </div>
+                    <button class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Analyze Conditions</span>
+                        <span class="btn-icon">→</span>
+                        <div class="btn-loader" id="btnLoader">
+                            <div class="loader-flame">🔥</div>
+                        </div>
+                    </button>
+                </div>
+
+                <p class="disclaimer-mini">
+                    *We take grilling very seriously. Perhaps too seriously.
+                </p>
+            </section>
+
+            <!-- Loading State -->
+            <section class="loading-section" id="loadingSection">
+                <div class="loading-content">
+                    <div class="loading-grill">
+                        <div class="grill-body">
+                            <div class="grill-lid"></div>
+                            <div class="grill-base"></div>
+                            <div class="grill-flames">
+                                <span>🔥</span><span>🔥</span><span>🔥</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="loading-title">Consulting the Weather Gods...</h2>
+                    <div class="loading-steps">
+                        <div class="step" id="step1">
+                            <span class="step-icon">🌡️</span>
+                            <span class="step-text">Analyzing thermal conditions...</span>
+                        </div>
+                        <div class="step" id="step2">
+                            <span class="step-icon">💨</span>
+                            <span class="step-text">Measuring wind vectors...</span>
+                        </div>
+                        <div class="step" id="step3">
+                            <span class="step-icon">🌧️</span>
+                            <span class="step-text">Calculating precipitation probability...</span>
+                        </div>
+                        <div class="step" id="step4">
+                            <span class="step-icon">📊</span>
+                            <span class="step-text">Running proprietary algorithms...</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection">
+                <div class="results-container">
+                    <!-- The Verdict -->
+                    <div class="verdict-card" id="verdictCard">
+                        <div class="verdict-header">
+                            <span class="verdict-label">THE OFFICIAL VERDICT</span>
+                            <span class="location-name" id="locationName">Loading...</span>
+                        </div>
+                        <div class="verdict-main">
+                            <div class="verdict-icon" id="verdictIcon">🔥</div>
+                            <div class="verdict-answer" id="verdictAnswer">YES</div>
+                            <div class="verdict-subtitle" id="verdictSubtitle">Fire it up, Grill Master!</div>
+                        </div>
+                        <div class="verdict-score">
+                            <div class="score-label">Grillability Index™</div>
+                            <div class="score-bar-container">
+                                <div class="score-bar" id="scoreBar"></div>
+                            </div>
+                            <div class="score-value" id="scoreValue">85/100</div>
+                        </div>
+                    </div>
+
+                    <!-- Weather Metrics -->
+                    <div class="metrics-grid">
+                        <!-- Temperature -->
+                        <div class="metric-card" id="tempCard">
+                            <div class="metric-header">
+                                <span class="metric-icon">🌡️</span>
+                                <span class="metric-title">Temperature</span>
+                            </div>
+                            <div class="metric-value" id="tempValue">--°F</div>
+                            <div class="metric-detail" id="tempFeelsLike">Feels like --°F</div>
+                            <div class="metric-analysis">
+                                <div class="analysis-bar-container">
+                                    <div class="analysis-bar" id="tempBar"></div>
+                                </div>
+                                <span class="analysis-label" id="tempLabel">Analyzing...</span>
+                            </div>
+                            <p class="metric-commentary" id="tempCommentary">Loading witty commentary...</p>
+                        </div>
+
+                        <!-- Wind -->
+                        <div class="metric-card" id="windCard">
+                            <div class="metric-header">
+                                <span class="metric-icon">💨</span>
+                                <span class="metric-title">Wind Speed</span>
+                            </div>
+                            <div class="metric-value" id="windValue">-- mph</div>
+                            <div class="metric-detail" id="windDirection">Direction: --</div>
+                            <div class="metric-analysis">
+                                <div class="analysis-bar-container">
+                                    <div class="analysis-bar" id="windBar"></div>
+                                </div>
+                                <span class="analysis-label" id="windLabel">Analyzing...</span>
+                            </div>
+                            <p class="metric-commentary" id="windCommentary">Loading witty commentary...</p>
+                        </div>
+
+                        <!-- Precipitation -->
+                        <div class="metric-card" id="rainCard">
+                            <div class="metric-header">
+                                <span class="metric-icon">🌧️</span>
+                                <span class="metric-title">Precipitation</span>
+                            </div>
+                            <div class="metric-value" id="rainValue">--%</div>
+                            <div class="metric-detail" id="rainType">Type: --</div>
+                            <div class="metric-analysis">
+                                <div class="analysis-bar-container">
+                                    <div class="analysis-bar" id="rainBar"></div>
+                                </div>
+                                <span class="analysis-label" id="rainLabel">Analyzing...</span>
+                            </div>
+                            <p class="metric-commentary" id="rainCommentary">Loading witty commentary...</p>
+                        </div>
+
+                        <!-- Humidity -->
+                        <div class="metric-card" id="humidityCard">
+                            <div class="metric-header">
+                                <span class="metric-icon">💧</span>
+                                <span class="metric-title">Humidity</span>
+                            </div>
+                            <div class="metric-value" id="humidityValue">--%</div>
+                            <div class="metric-detail" id="dewPoint">Dew Point: --°F</div>
+                            <div class="metric-analysis">
+                                <div class="analysis-bar-container">
+                                    <div class="analysis-bar" id="humidityBar"></div>
+                                </div>
+                                <span class="analysis-label" id="humidityLabel">Analyzing...</span>
+                            </div>
+                            <p class="metric-commentary" id="humidityCommentary">Loading witty commentary...</p>
+                        </div>
+                    </div>
+
+                    <!-- Scientific Breakdown -->
+                    <div class="science-section">
+                        <h3 class="science-title">
+                            <span class="science-icon">🔬</span>
+                            The Scientific Breakdown
+                        </h3>
+                        <div class="science-content">
+                            <div class="formula-display">
+                                <div class="formula-label">The Grillability Formula™</div>
+                                <div class="formula" id="formulaDisplay">
+                                    GI = (T<sub>score</sub> × 0.35) + (W<sub>score</sub> × 0.25) + (P<sub>score</sub> × 0.30) + (H<sub>score</sub> × 0.10)
+                                </div>
+                            </div>
+                            <div class="calculation-breakdown" id="calculationBreakdown">
+                                <!-- Filled by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hourly Forecast -->
+                    <div class="forecast-section">
+                        <h3 class="forecast-title">
+                            <span class="forecast-icon">📅</span>
+                            Today's Grilling Windows
+                        </h3>
+                        <div class="hourly-forecast" id="hourlyForecast">
+                            <!-- Filled by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Pro Tips -->
+                    <div class="tips-section" id="tipsSection">
+                        <h3 class="tips-title">
+                            <span class="tips-icon">💡</span>
+                            Expert Recommendations
+                        </h3>
+                        <div class="tips-grid" id="tipsGrid">
+                            <!-- Filled by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Try Again -->
+                    <button class="try-again-btn" id="tryAgainBtn">
+                        <span>Check Another Location</span>
+                        <span class="btn-icon">🔄</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Error State -->
+            <section class="error-section" id="errorSection">
+                <div class="error-content">
+                    <div class="error-icon">😢</div>
+                    <h2 class="error-title">Houston, We Have a Problem</h2>
+                    <p class="error-message" id="errorMessage">Something went wrong while consulting the weather gods.</p>
+                    <button class="try-again-btn" id="errorTryAgainBtn">
+                        <span>Try Again</span>
+                        <span class="btn-icon">🔄</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-disclaimer">
+                    <strong>Legal Disclaimer:</strong> This website provides weather-based grilling recommendations for entertainment purposes.
+                    We are not responsible for: overcooked steaks, undercooked chicken, neighbor complaints about smoke,
+                    existential crises caused by not grilling, or any decisions made based on our highly scientific algorithms.
+                    Always use common sense and check your local fire regulations.
+                </p>
+                <div class="footer-credits">
+                    <p>Weather data powered by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
+                    <p>Made with 🔥 and questionable meteorological expertise</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
