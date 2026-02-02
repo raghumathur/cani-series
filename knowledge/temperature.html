@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature & Grilling Guide | Can I Grill Today?</title>
+    <meta name="description" content="The complete guide to understanding how temperature affects your grilling. Learn optimal ranges, cold weather techniques, and heat management strategies.">
+    <link rel="canonical" href="https://canigrilltoday.com/knowledge/temperature.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="background-effects">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">
+                    <span class="nav-logo-icon">🔥</span>
+                    <span class="nav-logo-text">CanIGrillToday</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link">Check Weather</a>
+                    <a href="/knowledge/" class="nav-link active">Grilling Guides</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="https://buymeacoffee.com/canigrilltoday" class="nav-link nav-coffee" target="_blank" rel="noopener">
+                        <span class="coffee-icon">☕</span>
+                        <span>Buy Us a Coffee</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-container">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="/knowledge/">Grilling Guides</a>
+                <span class="breadcrumb-separator">→</span>
+                <span class="breadcrumb-current">Temperature Guide</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content page-content">
+            <article class="content-article">
+                <header class="article-header">
+                    <div class="article-icon">🌡️</div>
+                    <h1 class="article-title">The Complete Temperature Guide</h1>
+                    <p class="article-subtitle">Why Temperature Gets 35% of Our Grillability Index</p>
+                </header>
+
+                <div class="article-toc">
+                    <h4>In This Guide</h4>
+                    <ul>
+                        <li><a href="#why-matters">Why Temperature Matters</a></li>
+                        <li><a href="#optimal-ranges">Optimal Temperature Ranges</a></li>
+                        <li><a href="#cold-weather">Cold Weather Grilling</a></li>
+                        <li><a href="#hot-weather">Hot Weather Grilling</a></li>
+                        <li><a href="#feels-like">Feels Like vs. Actual</a></li>
+                        <li><a href="#scoring">How We Score It</a></li>
+                    </ul>
+                </div>
+
+                <section class="article-section" id="why-matters">
+                    <h2>Why Temperature Matters</h2>
+                    <p>
+                        Temperature is the single most important weather factor in our Grillability Index, accounting for
+                        <strong>35% of your total score</strong>. Why? Because it affects literally everything about your grilling experience.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Grill Performance</h3>
+                            <p>
+                                Ambient temperature directly affects how quickly your grill reaches cooking temperature and how well
+                                it maintains heat. Cold air = more fuel, longer preheating, and potential hot/cold spots.
+                            </p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Human Comfort</h3>
+                            <p>
+                                Let's be honest: if you're miserable, your grilling suffers. Extreme cold makes you rush.
+                                Extreme heat makes you sloppy. Comfort equals consistency.
+                            </p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Food Safety</h3>
+                            <p>
+                                Temperature affects how quickly bacteria multiply on raw meat waiting to be grilled. In hot weather,
+                                your prep time window shrinks dramatically.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="optimal-ranges">
+                    <h2>Optimal Temperature Ranges</h2>
+                    <p>
+                        We've identified five distinct temperature zones for grilling, each with its own characteristics
+                        and considerations.
+                    </p>
+
+                    <div class="temp-zones">
+                        <div class="temp-zone zone-freezing">
+                            <div class="zone-header">
+                                <span class="zone-range">Below 32°F (0°C)</span>
+                                <span class="zone-label">Freezing</span>
+                            </div>
+                            <div class="zone-score">Score: 10/100</div>
+                            <p>
+                                <strong>The Verdict:</strong> Technically possible, but why? Your grill will struggle to maintain temperature,
+                                your propane tank pressure drops significantly, and you'll be too cold to properly attend to your food.
+                                Unless you're filming a YouTube challenge video, maybe don't.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-cold">
+                            <div class="zone-header">
+                                <span class="zone-range">32°F - 45°F (0°C - 7°C)</span>
+                                <span class="zone-label">Cold</span>
+                            </div>
+                            <div class="zone-score">Score: 20-60/100</div>
+                            <p>
+                                <strong>The Verdict:</strong> Challenging but doable for the determined griller. Expect longer preheat times
+                                (up to 50% longer), increased fuel consumption, and the need for appropriate clothing. Your neighbors
+                                will either admire your dedication or question your sanity.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-cool">
+                            <div class="zone-header">
+                                <span class="zone-range">45°F - 60°F (7°C - 15°C)</span>
+                                <span class="zone-label">Cool</span>
+                            </div>
+                            <div class="zone-score">Score: 60-100/100</div>
+                            <p>
+                                <strong>The Verdict:</strong> Perfectly acceptable grilling weather. You might want a light jacket,
+                                but your grill will perform well. This is actually ideal for long, slow cooks where you don't
+                                want to be sweating over a hot grill for hours.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-perfect">
+                            <div class="zone-header">
+                                <span class="zone-range">60°F - 85°F (15°C - 29°C)</span>
+                                <span class="zone-label">Perfect</span>
+                            </div>
+                            <div class="zone-score">Score: 100/100</div>
+                            <p>
+                                <strong>The Verdict:</strong> This is it. The promised land. The temperature range that grills were
+                                designed for. Your grill performs optimally, you're comfortable, food safety is manageable,
+                                and life is good. If you're not grilling in this range, you're doing it wrong.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-hot">
+                            <div class="zone-header">
+                                <span class="zone-range">85°F - 95°F (29°C - 35°C)</span>
+                                <span class="zone-label">Hot</span>
+                            </div>
+                            <div class="zone-score">Score: 60-100/100</div>
+                            <p>
+                                <strong>The Verdict:</strong> Still great for grilling, challenging for grillers. Stay hydrated,
+                                seek shade when possible, and keep raw meat refrigerated until the last moment. Your grill
+                                will actually preheat faster in this range.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-extreme">
+                            <div class="zone-header">
+                                <span class="zone-range">Above 95°F (35°C)</span>
+                                <span class="zone-label">Extreme Heat</span>
+                            </div>
+                            <div class="zone-score">Score: 10-60/100</div>
+                            <p>
+                                <strong>The Verdict:</strong> You're already being grilled. Standing over additional flames is
+                                a heat stroke waiting to happen. If you must grill, do it early morning or after sunset.
+                                And for the love of all that is holy, drink water.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="cold-weather">
+                    <h2>Cold Weather Grilling Techniques</h2>
+                    <p>
+                        Grilling in the cold is a badge of honor in certain circles. Here's how to do it right:
+                    </p>
+
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-number">1</div>
+                            <div class="tip-content">
+                                <h3>Extend Your Preheat Time</h3>
+                                <p>
+                                    Plan for 15-25 minutes of preheating instead of the usual 10-15. Your grill needs extra time
+                                    to overcome the ambient cold and reach proper cooking temperature.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">2</div>
+                            <div class="tip-content">
+                                <h3>Stock Up on Fuel</h3>
+                                <p>
+                                    Cold weather increases fuel consumption by 20-50%. Keep an extra propane tank on hand,
+                                    or add 25% more charcoal than usual. Nothing kills a cold-weather BBQ like running out of heat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">3</div>
+                            <div class="tip-content">
+                                <h3>Keep the Lid Closed</h3>
+                                <p>
+                                    Every time you peek, you lose significant heat that takes longer to recover in cold weather.
+                                    Trust the process. Use a meat thermometer instead of visual checks.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">4</div>
+                            <div class="tip-content">
+                                <h3>Position Against Wind</h3>
+                                <p>
+                                    Cold + wind is the worst combination. Position your grill so the back faces the prevailing
+                                    wind direction, creating a natural wind break.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">5</div>
+                            <div class="tip-content">
+                                <h3>Dress Appropriately</h3>
+                                <p>
+                                    Layers, a hat, and fingerless gloves are your friends. Avoid anything too loose that could
+                                    catch on the grill or dangle into flames. Fashion meets function meets fire safety.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="hot-weather">
+                    <h2>Hot Weather Grilling Techniques</h2>
+                    <p>
+                        Grilling when it's already hot outside requires a different strategy:
+                    </p>
+
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-number">1</div>
+                            <div class="tip-content">
+                                <h3>Time It Right</h3>
+                                <p>
+                                    Early morning (before 10am) or evening (after 6pm) grilling lets you avoid peak heat.
+                                    Bonus: sunset BBQs have better ambiance anyway.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">2</div>
+                            <div class="tip-content">
+                                <h3>Hydrate Aggressively</h3>
+                                <p>
+                                    Keep water nearby and drink constantly. Beer counts as a liquid but not as hydration.
+                                    Your grilling will improve when you're not fighting dehydration.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">3</div>
+                            <div class="tip-content">
+                                <h3>Manage Food Safety</h3>
+                                <p>
+                                    Raw meat should spend minimal time above 40°F. Use a cooler with ice to store meat until
+                                    it goes directly on the grill. The danger zone (40°F-140°F) becomes dangerous faster in heat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">4</div>
+                            <div class="tip-content">
+                                <h3>Create Shade</h3>
+                                <p>
+                                    A patio umbrella or canopy (at safe distance from flames) protects you without affecting
+                                    grill performance. You don't need to suffer for good BBQ.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">5</div>
+                            <div class="tip-content">
+                                <h3>Choose Quick Cooks</h3>
+                                <p>
+                                    Hot weather is perfect for burgers, dogs, and thin steaks that cook in minutes.
+                                    Save the 8-hour brisket for cooler days.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="feels-like">
+                    <h2>Feels Like vs. Actual Temperature</h2>
+                    <p>
+                        Our system shows both the actual temperature and the "feels like" (apparent) temperature.
+                        Here's why both matter:
+                    </p>
+
+                    <div class="comparison-box">
+                        <div class="comparison-item">
+                            <h3>Actual Temperature</h3>
+                            <p>
+                                This is what matters to your grill. Grills don't care about humidity or wind chill -
+                                they respond to the actual air temperature. Use this to predict grill performance.
+                            </p>
+                        </div>
+                        <div class="comparison-item">
+                            <h3>Feels Like Temperature</h3>
+                            <p>
+                                This is what matters to you. It factors in humidity and wind to give you a sense of
+                                how comfortable you'll be standing outside. Use this to plan your clothing and hydration.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        When there's a big gap between actual and feels-like temperatures (more than 10°F), pay extra attention.
+                        A 70°F day that feels like 85°F due to humidity will still affect your grilling endurance, even if
+                        your grill is happy.
+                    </p>
+                </section>
+
+                <section class="article-section" id="scoring">
+                    <h2>How We Score Temperature</h2>
+                    <p>
+                        Our scoring algorithm uses a piecewise linear function that rewards ideal temperatures
+                        while gradually penalizing extremes. Here's the logic:
+                    </p>
+
+                    <div class="scoring-breakdown">
+                        <div class="score-rule">
+                            <div class="rule-range">60°F - 85°F</div>
+                            <div class="rule-score">100 points</div>
+                            <div class="rule-description">The goldilocks zone. No penalty applied.</div>
+                        </div>
+                        <div class="score-rule">
+                            <div class="rule-range">45°F - 60°F or 85°F - 95°F</div>
+                            <div class="rule-score">60-100 points</div>
+                            <div class="rule-description">Gradual decline. Acceptable but not ideal.</div>
+                        </div>
+                        <div class="score-rule">
+                            <div class="rule-range">32°F - 45°F or 95°F - 105°F</div>
+                            <div class="rule-score">20-60 points</div>
+                            <div class="rule-description">Steeper decline. Challenging conditions.</div>
+                        </div>
+                        <div class="score-rule">
+                            <div class="rule-range">Below 32°F or Above 105°F</div>
+                            <div class="rule-score">10 points</div>
+                            <div class="rule-description">Extreme conditions. Proceed at your own risk.</div>
+                        </div>
+                    </div>
+
+                    <p class="scoring-note">
+                        The 35% weight means temperature can contribute up to 35 points to your final Grillability Index.
+                        In perfect conditions, you get all 35. In freezing temps, you get about 3.5.
+                    </p>
+                </section>
+
+                <!-- Navigation -->
+                <nav class="article-nav">
+                    <a href="/knowledge/" class="nav-prev">
+                        <span class="nav-direction">← Back to</span>
+                        <span class="nav-title">All Guides</span>
+                    </a>
+                    <a href="/knowledge/wind.html" class="nav-next">
+                        <span class="nav-direction">Next Guide →</span>
+                        <span class="nav-title">Wind Guide</span>
+                    </a>
+                </nav>
+
+                <!-- CTA -->
+                <section class="article-section">
+                    <div class="knowledge-cta">
+                        <h2>Check Your Temperature Now</h2>
+                        <p>See how today's temperature affects your Grillability Index.</p>
+                        <a href="/" class="primary-cta">
+                            <span>🔥</span> Check Your Conditions
+                        </a>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h4>Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="/">Weather Check</a></li>
+                            <li><a href="/knowledge/">Grilling Guides</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/sitemap.xml">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Knowledge Base</h4>
+                        <ul class="footer-links">
+                            <li><a href="/knowledge/temperature.html">Temperature Guide</a></li>
+                            <li><a href="/knowledge/wind.html">Wind Guide</a></li>
+                            <li><a href="/knowledge/precipitation.html">Precipitation Guide</a></li>
+                            <li><a href="/knowledge/humidity.html">Humidity Guide</a></li>
+                            <li><a href="/knowledge/tips.html">Pro Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support the Grill</h4>
+                        <p class="footer-support-text">
+                            If this guide helped you grill better, consider fueling our servers.
+                        </p>
+                        <a href="https://buymeacoffee.com/canigrilltoday" class="footer-coffee-btn" target="_blank" rel="noopener">
+                            <span>☕</span> Buy Us a Coffee
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-credits">
+                        <p>Made with 🔥 and questionable meteorological expertise</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

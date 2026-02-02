@@ -5,11 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Can I Grill Today? | The Definitive Grilling Weather Authority</title>
     <meta name="description" content="The world's most scientifically rigorous grilling weather advisory system. Enter your ZIP code and discover if the atmospheric conditions align with your carnivorous ambitions.">
+    <meta name="keywords" content="grilling weather, BBQ forecast, grill conditions, outdoor cooking weather, barbecue weather check">
+    <link rel="canonical" href="https://canigrilltoday.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Can I Grill Today? | The Definitive Grilling Weather Authority">
+    <meta property="og:description" content="Enter your ZIP code and discover if the atmospheric conditions align with your carnivorous ambitions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://canigrilltoday.com/">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Can I Grill Today?",
+        "description": "Weather-based grilling advisory system",
+        "url": "https://canigrilltoday.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any"
+    }
+    </script>
 </head>
 <body>
     <div class="app-container">
@@ -20,6 +41,30 @@
             <div class="gradient-orb orb-3"></div>
             <div class="smoke-particles" id="smokeContainer"></div>
         </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">
+                    <span class="nav-logo-icon">🔥</span>
+                    <span class="nav-logo-text">CanIGrillToday</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link active">Check Weather</a>
+                    <a href="/knowledge/" class="nav-link">Grilling Guides</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="https://buymeacoffee.com/canigrilltoday" class="nav-link nav-coffee" target="_blank" rel="noopener">
+                        <span class="coffee-icon">☕</span>
+                        <span>Buy Us a Coffee</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
 
         <!-- Header -->
         <header class="header">
@@ -72,6 +117,25 @@
                 <p class="disclaimer-mini">
                     *We take grilling very seriously. Perhaps too seriously.
                 </p>
+
+                <!-- Quick Links for New Visitors -->
+                <div class="quick-links">
+                    <p class="quick-links-label">New to weather-based grilling? Start here:</p>
+                    <div class="quick-links-grid">
+                        <a href="/knowledge/" class="quick-link">
+                            <span class="quick-link-icon">📚</span>
+                            <span class="quick-link-text">Grilling Guides</span>
+                        </a>
+                        <a href="/knowledge/tips.html" class="quick-link">
+                            <span class="quick-link-icon">💡</span>
+                            <span class="quick-link-text">Pro Tips</span>
+                        </a>
+                        <a href="/about.html" class="quick-link">
+                            <span class="quick-link-icon">🔬</span>
+                            <span class="quick-link-text">Our Method</span>
+                        </a>
+                    </div>
+                </div>
             </section>
 
             <!-- Loading State -->
@@ -148,6 +212,7 @@
                                 <span class="analysis-label" id="tempLabel">Analyzing...</span>
                             </div>
                             <p class="metric-commentary" id="tempCommentary">Loading witty commentary...</p>
+                            <a href="/knowledge/temperature.html" class="metric-learn-more">Learn more about temperature →</a>
                         </div>
 
                         <!-- Wind -->
@@ -165,6 +230,7 @@
                                 <span class="analysis-label" id="windLabel">Analyzing...</span>
                             </div>
                             <p class="metric-commentary" id="windCommentary">Loading witty commentary...</p>
+                            <a href="/knowledge/wind.html" class="metric-learn-more">Learn more about wind →</a>
                         </div>
 
                         <!-- Precipitation -->
@@ -182,6 +248,7 @@
                                 <span class="analysis-label" id="rainLabel">Analyzing...</span>
                             </div>
                             <p class="metric-commentary" id="rainCommentary">Loading witty commentary...</p>
+                            <a href="/knowledge/precipitation.html" class="metric-learn-more">Learn more about precipitation →</a>
                         </div>
 
                         <!-- Humidity -->
@@ -199,6 +266,7 @@
                                 <span class="analysis-label" id="humidityLabel">Analyzing...</span>
                             </div>
                             <p class="metric-commentary" id="humidityCommentary">Loading witty commentary...</p>
+                            <a href="/knowledge/humidity.html" class="metric-learn-more">Learn more about humidity →</a>
                         </div>
                     </div>
 
@@ -241,6 +309,7 @@
                         <div class="tips-grid" id="tipsGrid">
                             <!-- Filled by JavaScript -->
                         </div>
+                        <a href="/knowledge/tips.html" class="tips-see-all">See all grilling tips →</a>
                     </div>
 
                     <!-- Try Again -->
@@ -268,20 +337,60 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-content">
-                <p class="footer-disclaimer">
-                    <strong>Legal Disclaimer:</strong> This website provides weather-based grilling recommendations for entertainment purposes.
-                    We are not responsible for: overcooked steaks, undercooked chicken, neighbor complaints about smoke,
-                    existential crises caused by not grilling, or any decisions made based on our highly scientific algorithms.
-                    Always use common sense and check your local fire regulations.
-                </p>
-                <div class="footer-credits">
-                    <p>Weather data powered by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
-                    <p>Made with 🔥 and questionable meteorological expertise</p>
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h4>Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="/">Weather Check</a></li>
+                            <li><a href="/knowledge/">Grilling Guides</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/sitemap.xml">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Knowledge Base</h4>
+                        <ul class="footer-links">
+                            <li><a href="/knowledge/temperature.html">Temperature Guide</a></li>
+                            <li><a href="/knowledge/wind.html">Wind Guide</a></li>
+                            <li><a href="/knowledge/precipitation.html">Precipitation Guide</a></li>
+                            <li><a href="/knowledge/humidity.html">Humidity Guide</a></li>
+                            <li><a href="/knowledge/tips.html">Pro Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support the Grill</h4>
+                        <p class="footer-support-text">
+                            If this site helped you decide to grill (or saved you from a soggy disaster),
+                            consider fueling our servers with caffeine.
+                        </p>
+                        <a href="https://buymeacoffee.com/canigrilltoday" class="footer-coffee-btn" target="_blank" rel="noopener">
+                            <span>☕</span> Buy Us a Coffee
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-disclaimer">
+                        <strong>Legal Disclaimer:</strong> This website provides weather-based grilling recommendations for entertainment purposes.
+                        We are not responsible for: overcooked steaks, undercooked chicken, neighbor complaints about smoke,
+                        existential crises caused by not grilling, or any decisions made based on our highly scientific algorithms.
+                        Always use common sense and check your local fire regulations.
+                    </p>
+                    <div class="footer-credits">
+                        <p>Weather data powered by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
+                        <p>Made with 🔥 and questionable meteorological expertise</p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
 
     <script src="app.js"></script>
+    <script>
+        // Mobile navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humidity & Grilling Guide | Can I Grill Today?</title>
+    <meta name="description" content="Learn how humidity affects your grilling experience and comfort. Understand dew point, smoke behavior, and tips for grilling in humid conditions.">
+    <link rel="canonical" href="https://canigrilltoday.com/knowledge/humidity.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="background-effects">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">
+                    <span class="nav-logo-icon">🔥</span>
+                    <span class="nav-logo-text">CanIGrillToday</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="navMenu">
+                    <a href="/" class="nav-link">Check Weather</a>
+                    <a href="/knowledge/" class="nav-link active">Grilling Guides</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="https://buymeacoffee.com/canigrilltoday" class="nav-link nav-coffee" target="_blank" rel="noopener">
+                        <span class="coffee-icon">☕</span>
+                        <span>Buy Us a Coffee</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-container">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="/knowledge/">Grilling Guides</a>
+                <span class="breadcrumb-separator">→</span>
+                <span class="breadcrumb-current">Humidity Guide</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content page-content">
+            <article class="content-article">
+                <header class="article-header">
+                    <div class="article-icon">💧</div>
+                    <h1 class="article-title">The Complete Humidity Guide</h1>
+                    <p class="article-subtitle">The Often-Overlooked Factor in Outdoor Cooking Comfort</p>
+                </header>
+
+                <div class="article-toc">
+                    <h4>In This Guide</h4>
+                    <ul>
+                        <li><a href="#why-matters">Why Humidity Matters</a></li>
+                        <li><a href="#dew-point">Understanding Dew Point</a></li>
+                        <li><a href="#ranges">Humidity Ranges</a></li>
+                        <li><a href="#high-humidity">Grilling in High Humidity</a></li>
+                        <li><a href="#low-humidity">Grilling in Low Humidity</a></li>
+                        <li><a href="#scoring">How We Score It</a></li>
+                    </ul>
+                </div>
+
+                <section class="article-section" id="why-matters">
+                    <h2>Why Humidity Matters</h2>
+                    <p>
+                        Humidity is the humble factor in our Grillability Index, accounting for just <strong>10% of your total score</strong>.
+                        But don't let that fool you - in extreme conditions, humidity can be the difference between enjoying your
+                        cookout and feeling like you're grilling inside a steam room.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Personal Comfort</h3>
+                            <p>
+                                High humidity prevents sweat from evaporating, making you feel hotter than the actual temperature.
+                                Standing over a 500°F grill in 90% humidity is an endurance test, not a cooking experience.
+                            </p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Smoke Behavior</h3>
+                            <p>
+                                Humid air is denser and affects how smoke moves. High humidity can cause smoke to linger
+                                rather than rising, potentially overwhelming you and the neighbors.
+                            </p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Bark Formation</h3>
+                            <p>
+                                For low-and-slow BBQ, humidity affects the formation of bark (that delicious crust).
+                                Very dry conditions can dry out meat surfaces too quickly; very humid conditions
+                                can prevent proper bark development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        The reason humidity only gets 10% weight in our algorithm is simple: it primarily affects
+                        <em>you</em>, not your grill or food safety. Your grill doesn't care about humidity.
+                        But you might.
+                    </p>
+                </section>
+
+                <section class="article-section" id="dew-point">
+                    <h2>Understanding Dew Point</h2>
+                    <p>
+                        Relative humidity percentages are confusing. Dew point is the metric that actually tells you
+                        how comfortable (or miserable) you'll feel.
+                    </p>
+
+                    <div class="callout-box">
+                        <h3>What's Dew Point?</h3>
+                        <p>
+                            Dew point is the temperature at which air becomes saturated and water vapor starts condensing.
+                            Higher dew point = more moisture in the air = more discomfort. It's a better indicator of
+                            "sticky" feeling than relative humidity.
+                        </p>
+                    </div>
+
+                    <div class="temp-zones">
+                        <div class="temp-zone zone-perfect">
+                            <div class="zone-header">
+                                <span class="zone-range">Below 55°F Dew Point</span>
+                                <span class="zone-label">Pleasant</span>
+                            </div>
+                            <p>
+                                <strong>Comfort Level:</strong> Excellent. Air feels dry and comfortable. This is ideal
+                                grilling weather from a humidity perspective. You'll feel refreshed, not sticky.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-cool">
+                            <div class="zone-header">
+                                <span class="zone-range">55-65°F Dew Point</span>
+                                <span class="zone-label">Comfortable</span>
+                            </div>
+                            <p>
+                                <strong>Comfort Level:</strong> Good. You'll notice some humidity but nothing oppressive.
+                                Most people find this range perfectly acceptable for outdoor activities.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-cold">
+                            <div class="zone-header">
+                                <span class="zone-range">65-70°F Dew Point</span>
+                                <span class="zone-label">Muggy</span>
+                            </div>
+                            <p>
+                                <strong>Comfort Level:</strong> Noticeable. The air starts to feel heavy. You'll sweat more
+                                and cool less efficiently. Stay hydrated and take breaks from grill proximity.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-freezing">
+                            <div class="zone-header">
+                                <span class="zone-range">Above 70°F Dew Point</span>
+                                <span class="zone-label">Oppressive</span>
+                            </div>
+                            <p>
+                                <strong>Comfort Level:</strong> Miserable. This is "tropical" humidity. You'll feel like
+                                you're wearing the air. Grilling is still possible but considerably less enjoyable.
+                                Consider timing your cook for early morning or after sunset.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        <strong>Pro Tip:</strong> We show the estimated dew point in our results so you know what to expect
+                        for your personal comfort, not just your grill's performance.
+                    </p>
+                </section>
+
+                <section class="article-section" id="ranges">
+                    <h2>Humidity Ranges and Grilling</h2>
+                    <p>
+                        Here's how different relative humidity levels affect your grilling experience:
+                    </p>
+
+                    <div class="temp-zones">
+                        <div class="temp-zone zone-cold">
+                            <div class="zone-header">
+                                <span class="zone-range">Below 30% Humidity</span>
+                                <span class="zone-label">Very Dry</span>
+                            </div>
+                            <div class="zone-score">Score: 70-100/100</div>
+                            <p>
+                                <strong>Grill Impact:</strong> Minimal direct impact on grilling. Food may dry out faster on the surface.
+                                Great for getting crispy skin on chicken or forming bark on brisket.<br>
+                                <strong>Personal Impact:</strong> You'll feel comfortable temperature-wise, but stay hydrated.
+                                Dry air dehydrates you faster than you realize.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-perfect">
+                            <div class="zone-header">
+                                <span class="zone-range">30-60% Humidity</span>
+                                <span class="zone-label">Ideal</span>
+                            </div>
+                            <div class="zone-score">Score: 100/100</div>
+                            <p>
+                                <strong>Grill Impact:</strong> Goldilocks zone. Enough moisture to prevent over-drying,
+                                not so much that it affects smoke or comfort.<br>
+                                <strong>Personal Impact:</strong> Comfortable for extended outdoor cooking. You can enjoy
+                                being outside without feeling sticky or parched.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-cold">
+                            <div class="zone-header">
+                                <span class="zone-range">60-80% Humidity</span>
+                                <span class="zone-label">Humid</span>
+                            </div>
+                            <div class="zone-score">Score: 70-100/100</div>
+                            <p>
+                                <strong>Grill Impact:</strong> Smoke may hang lower and linger longer. Charcoal might be
+                                slightly harder to light. Bark formation on smoked meats may take longer.<br>
+                                <strong>Personal Impact:</strong> You'll feel warmer than the thermometer suggests.
+                                Plan for more frequent water breaks.
+                            </p>
+                        </div>
+
+                        <div class="temp-zone zone-freezing">
+                            <div class="zone-header">
+                                <span class="zone-range">Above 80% Humidity</span>
+                                <span class="zone-label">Tropical</span>
+                            </div>
+                            <div class="zone-score">Score: 40-70/100</div>
+                            <p>
+                                <strong>Grill Impact:</strong> Charcoal absorbs moisture from the air (keep bags sealed!).
+                                Smoke flavor may be more intense due to how it adheres to moist surfaces.<br>
+                                <strong>Personal Impact:</strong> You will sweat. A lot. Everything will feel sticky.
+                                Consider this character building.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="high-humidity">
+                    <h2>Grilling in High Humidity</h2>
+                    <p>
+                        When the air feels like soup, here's how to make the most of your grilling session:
+                    </p>
+
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-number">1</div>
+                            <div class="tip-content">
+                                <h3>Time Your Cook</h3>
+                                <p>
+                                    Humidity often peaks in the afternoon. Early morning (before 10am) or evening (after 6pm)
+                                    typically offers lower humidity and more comfort for extended grilling sessions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">2</div>
+                            <div class="tip-content">
+                                <h3>Hydrate Aggressively</h3>
+                                <p>
+                                    High humidity makes you sweat more while making sweat less effective at cooling you.
+                                    Drink water constantly, even if you don't feel thirsty. Set a phone timer if needed.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">3</div>
+                            <div class="tip-content">
+                                <h3>Protect Your Charcoal</h3>
+                                <p>
+                                    Charcoal is hygroscopic - it absorbs moisture from humid air. Keep bags sealed tight
+                                    and store in a dry place. Consider a small sealed container for the charcoal you'll use that day.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">4</div>
+                            <div class="tip-content">
+                                <h3>Embrace the Smoke</h3>
+                                <p>
+                                    Humid conditions can actually enhance smoke adhesion to meat. If you're smoking,
+                                    you might find you get a more pronounced smoke ring and flavor. Silver lining!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">5</div>
+                            <div class="tip-content">
+                                <h3>Dress Appropriately</h3>
+                                <p>
+                                    Loose, light-colored, breathable clothing helps. Cotton absorbs sweat; moisture-wicking
+                                    fabrics help it evaporate. Skip the dark apron if you have a lighter option.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="low-humidity">
+                    <h2>Grilling in Low Humidity</h2>
+                    <p>
+                        Dry conditions come with their own considerations:
+                    </p>
+
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <div class="tip-number">1</div>
+                            <div class="tip-content">
+                                <h3>Watch for Drying</h3>
+                                <p>
+                                    Low humidity accelerates surface drying on meat. This can be good (crispy skin) or bad
+                                    (dried-out burgers). Adjust cooking times accordingly and consider basting or spritzing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">2</div>
+                            <div class="tip-content">
+                                <h3>Fire Safety Awareness</h3>
+                                <p>
+                                    Low humidity means dry vegetation. Be extra careful with embers and ash disposal.
+                                    Keep a fire extinguisher or garden hose readily accessible.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">3</div>
+                            <div class="tip-content">
+                                <h3>Hydrate Anyway</h3>
+                                <p>
+                                    Dry air pulls moisture from your body more efficiently. You might not feel sweaty,
+                                    but you're still losing water. Keep drinking.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-number">4</div>
+                            <div class="tip-content">
+                                <h3>Use a Water Pan</h3>
+                                <p>
+                                    For smoking or indirect grilling, a water pan adds humidity inside the grill itself,
+                                    helping prevent meat from drying out in arid conditions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section" id="scoring">
+                    <h2>How We Score Humidity</h2>
+                    <p>
+                        Our humidity scoring focuses on comfort rather than grill performance:
+                    </p>
+
+                    <div class="scoring-breakdown">
+                        <div class="score-rule">
+                            <div class="rule-range">30-60% relative humidity</div>
+                            <div class="rule-score">100 points</div>
+                            <div class="rule-description">Optimal comfort range. No penalty.</div>
+                        </div>
+                        <div class="score-rule">
+                            <div class="rule-range">20-30% or 60-80%</div>
+                            <div class="rule-score">70-100 points</div>
+                            <div class="rule-description">Slightly outside ideal. Minor penalty.</div>
+                        </div>
+                        <div class="score-rule">
+                            <div class="rule-range">Below 20% or above 80%</div>
+                            <div class="rule-score">30-70 points</div>
+                            <div class="rule-description">Uncomfortable extremes. Moderate penalty.</div>
+                        </div>
+                    </div>
+
+                    <p class="scoring-note">
+                        The 10% weight means humidity can contribute up to 10 points to your final Grillability Index.
+                        In ideal conditions, you get all 10. In extreme humidity, you might only get 3-4.
+                        It's not make-or-break, but it matters for your comfort.
+                    </p>
+                </section>
+
+                <!-- Navigation -->
+                <nav class="article-nav">
+                    <a href="/knowledge/precipitation.html" class="nav-prev">
+                        <span class="nav-direction">← Previous</span>
+                        <span class="nav-title">Precipitation Guide</span>
+                    </a>
+                    <a href="/knowledge/tips.html" class="nav-next">
+                        <span class="nav-direction">Next →</span>
+                        <span class="nav-title">Pro Tips</span>
+                    </a>
+                </nav>
+
+                <!-- CTA -->
+                <section class="article-section">
+                    <div class="knowledge-cta">
+                        <h2>Check Your Humidity Now</h2>
+                        <p>See how today's humidity affects your Grillability Index.</p>
+                        <a href="/" class="primary-cta">
+                            <span>🔥</span> Check Your Conditions
+                        </a>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h4>Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="/">Weather Check</a></li>
+                            <li><a href="/knowledge/">Grilling Guides</a></li>
+                            <li><a href="/about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Knowledge Base</h4>
+                        <ul class="footer-links">
+                            <li><a href="/knowledge/temperature.html">Temperature Guide</a></li>
+                            <li><a href="/knowledge/wind.html">Wind Guide</a></li>
+                            <li><a href="/knowledge/precipitation.html">Precipitation Guide</a></li>
+                            <li><a href="/knowledge/humidity.html">Humidity Guide</a></li>
+                            <li><a href="/knowledge/tips.html">Pro Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="https://buymeacoffee.com/canigrilltoday" class="footer-coffee-btn" target="_blank" rel="noopener">
+                            <span>☕</span> Buy Us a Coffee
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-credits">
+                        <p>Made with 🔥 and questionable meteorological expertise</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
